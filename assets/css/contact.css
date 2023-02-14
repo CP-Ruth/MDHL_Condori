@@ -34,7 +34,7 @@ nav a {
 #header_img {
     height: 300px;
     width: 100%;
-    background-image: url(./assets/design2_image1.jpg);
+    background-image: url(../design2_image1.jpg);
     background-position: center; /* ORIGEN EN EL MEDIO */
     background-size: cover; /* ALTURA O ANCHA MINIMA */
 }
@@ -47,17 +47,21 @@ header h2 {
     font-size: 20px;
 }
 
-section {
+main {
     position: relative; /* PARA QUE EL FONDO SE POSICIONA ACA */
     min-height: 51.75vh;
     padding: 20px;
 }
 
-section > * {
+main > * {
     display: inline-block;
     vertical-align: middle;
     /* y x */ 
     margin: 0 20px;
+}
+
+main > img{
+    width: 200px;
 }
 
 #section_img {
@@ -67,7 +71,7 @@ section > * {
     position: absolute; 
     top: 0; /* DEFINICON DEL ORIGEN */
     left: -20px; /* COMPENSACION DEL MARGIN */
-    background-image: url(./assets/hockey_2.jpg);
+    background-image: url(../hockey_3.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
