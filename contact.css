@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    /* top right bottom left */
+    margin: 30px 30px 0px 30px;
+}
+
+nav {
+    text-align: right;
+    transform: translateY(50%); /* trasaladr el elemento */
+    padding: 0 5px;
+}
+
+nav a { 
+    display: inline-block;
+    background-color: rgb(255, 239, 22);
+    color: black;
+    padding: 8px;
+    margin: 0 5px;
+    text-decoration: none; /* LINEA DEBAJO DEL TEXTO LINK */
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: rgb(61, 122, 61);
+    color: white;
+}
+
+#header_img {
+    height: 300px;
+    width: 100%;
+    background-image: url(./assets/design2_image1.jpg);
+    background-position: center; /* ORIGEN EN EL MEDIO */
+    background-size: cover; /* ALTURA O ANCHA MINIMA */
+}
+
+header h2 {
+    background-color: rgb(61, 122, 61);
+    text-align: center;
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+}
+
+section {
+    position: relative; /* PARA QUE EL FONDO SE POSICIONA ACA */
+    min-height: 51.75vh;
+    padding: 20px;
+}
+
+section > * {
+    display: inline-block;
+    vertical-align: middle;
+    /* y x */ 
+    margin: 0 20px;
+}
+
+#section_img {
+    /* CTRL + / */
+    /* CTRL + X */
+    /* para que el elemento se maneja de manera independiente */
+    position: absolute; 
+    top: 0; /* DEFINICON DEL ORIGEN */
+    left: -20px; /* COMPENSACION DEL MARGIN */
+    background-image: url(./assets/hockey_3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1; /* PONER LA IMAGEN EN LA ULTIMA COPA (ABAJO) */
+}
+
+article {
+    padding: 10px 0;
+}
+
+article p {
+    text-indent: 20px; /* CREAR ESPACIO AL PRINCIPIO DE UN PÁRRAFO */
+}
