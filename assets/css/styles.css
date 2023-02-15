@@ -1,197 +1,197 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  
-  #body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    text-align: justify;
-  }
-  
-  h1 {
-    /* top right bottom left */
-    margin: 15px 30px;
-  }
-  
-  nav {
-    position: absolute;
-    transform: translateY(-50%);
-    /* trasladar el elemento */
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    gap: 10px;
-    padding: 0 10px;
-  }
-  
-  nav a {
-    background-color: rgb(255, 239, 22);
-    color: black;
-    padding: 8px;
-    text-decoration: none;
-    /* LINEA DEBAJO DEL TEXTO LINK */
-    border: 1px solid black;
-    border-radius: 5px;
-  }
-  
-  .active {
-    background-color: rgb(61, 122, 61);
-    color: white;
-  }
-  
-  #header_img {
-    height: 200px;
-    width: 100%;
-    background-image: url(../design2_image1.jpg);
-    background-position: center;
-    /* ORIGEN EN EL MEDIO */
-    background-size: cover;
-    /* ALTURA O ANCHA MINIMA */
-  }
-  
-  main {
-    position: relative;
-    /* PARA QUE EL FONDO SE POSICIONA ACA */
-    flex: 1;
-  }
-  
-  main h2 {
-    background-color: rgb(61, 122, 61);
-    color: white;
-    text-align: center;
-    padding: 8px;
-    font-size: 20px;
-  }
-  
-  .main_img {
-    /* CTRL + / */
-    /* CTRL + X */
-    /* para que el elemento se maneja de manera independiente */
-    position: absolute;
-    top: 0;
-    /* DEFINICON DEL ORIGEN */
-    left: 0;
-    /* COMPENSACION DEL MARGIN */
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-    z-index: -1;
-    /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
-  }
-  
-  #main_img1 {
-    background-image: url(../hockey_1.jpg);
-  }
-  
-  #main_img2 {
-    background-image: url(../hockey_2.jpg);
-  }
-  
-  #main_img3 {
-    background-image: url(../hockey_3.jpg);
-  }
-  
-  #main_logo_y_contenido {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    gap: 30px;
-  }
-  
-  #main_logo_y_contenido > img {
-    width: 200px;
-    height: 200px;
-  }
-  
-  article {
-    padding: 10px 0;
-  }
-  
-  article p {
-    text-indent: 20px;
-    /* CREAR ESPACIO AL PRINCIPIO DE UN PÁRRAFO */
-  }
-  
-  /*.............GAME............. */
-  
-  #game_info p {
-    margin: 10px 0 5px 0;
-  }
-  
-  #game_info i {
-    text-decoration: underline;
-  }
-  
-  table {
-    margin: 10px 0;
-    width: 480px;
-    text-align: center;
-    border-collapse: collapse;
-    border-top: 4px solid rgb(61, 122, 61);
-    border-bottom: 4px solid rgb(61, 122, 61);
-  }
-  
-  th {
-    padding: 8px;
-    background:  rgba(255, 239, 22, 0.486);
-    border-bottom: 1px solid rgb(61, 122, 61);
-    color: black;
-  }
-  
-  td {
-    padding: 8px;
-    background: rgba(255, 239, 22, 0.486);
-    border-bottom: 1px solid rgb(61, 122, 61);
-    color: black;
-    border-top: px solid rgba(61, 122, 61, 0.596);
-  }
-  
-  /*............RULES..........*/
-  
-  #rules > p,
-  #rules > h3 {
-    text-align: center;
-  }
-  
-  #rules > h3 {
-    margin-bottom: 5px;
-  }
-  
-  #rules > p {
-    margin-bottom: 15px;
-  }
-  
-  dt {
-    font-weight: bold;
-    margin: 30px 0 15px 0;
-  }
-  
-  #rules dd > ol > li {
-    margin: 15px 0;
-    font-weight: bold;
-  }
-  
-  #rules dd > ol > li > * {
-    font-weight: normal;
-  }
-  
-  #rules dd > p {
-    text-indent: 20px;
-  }
-  
-  #rules ul > li {
-    margin-left: 50px;
-    list-style-type: circle;
-  }
-  
-  .flex {
-    display: flex;
-    gap: 20px;
-  }
-  /*hiciste un buen trabajo*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: justify;
+}
+
+h1 {
+  /* top right bottom left */
+  margin: 15px 30px;
+}
+
+nav {
+  position: absolute;
+  transform: translateY(-50%);
+  /* trasladar el elemento */
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+nav a {
+  background-color: rgb(255, 239, 22);
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  /* LINEA DEBAJO DEL TEXTO LINK */
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: rgb(61, 122, 61);
+  color: white;
+}
+
+#header_img {
+  height: 200px;
+  width: 100%;
+  background-image: url(../design2_image1.jpg);
+  background-position: center;
+  /* ORIGEN EN EL MEDIO */
+  background-size: cover;
+  /* ALTURA O ANCHA MINIMA */
+}
+
+main {
+  position: relative;
+  /* PARA QUE EL FONDO SE POSICIONA ACA */
+  flex: 1;
+}
+
+main h2 {
+  background-color: rgb(61, 122, 61);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.main_img {
+  /* CTRL + / */
+  /* CTRL + X */
+  /* para que el elemento se maneja de manera independiente */
+  position: absolute;
+  top: 0;
+  /* DEFINICON DEL ORIGEN */
+  left: 0;
+  /* COMPENSACION DEL MARGIN */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
+}
+
+#main_img1 {
+  background-image: url(../hockey_1.jpg);
+}
+
+#main_img2 {
+  background-image: url(../hockey_2.jpg);
+}
+
+#main_img3 {
+  background-image: url(../hockey_3.jpg);
+}
+
+#main_logo_y_contenido {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+#main_logo_y_contenido > img {
+  width: 200px;
+  height: 200px;
+}
+
+article {
+  padding: 10px 0;
+}
+
+article p {
+  text-indent: 20px;
+  /* CREAR ESPACIO AL PRINCIPIO DE UN PÁRRAFO */
+}
+
+/*.............GAME............. */
+
+#game_info p {
+  margin: 10px 0 5px 0;
+}
+
+#game_info i {
+  text-decoration: underline;
+}
+
+table {
+  margin: 10px 0;
+  width: 480px;
+  text-align: center;
+  border-collapse: collapse;
+  border-top: 4px solid rgb(61, 122, 61);
+  border-bottom: 4px solid rgb(61, 122, 61);
+}
+
+th {
+  padding: 8px;
+  background:  rgba(255, 239, 22, 0.486);
+  border-bottom: 1px solid rgb(61, 122, 61);
+  color: black;
+}
+
+td {
+  padding: 8px;
+  background: rgba(255, 239, 22, 0.486);
+  border-bottom: 1px solid rgb(61, 122, 61);
+  color: black;
+  border-top: px solid rgba(61, 122, 61, 0.596);
+}
+
+/*............RULES..........*/
+
+#rules > p,
+#rules > h3 {
+  text-align: center;
+}
+
+#rules > h3 {
+  margin-bottom: 5px;
+}
+
+#rules > p {
+  margin-bottom: 15px;
+}
+
+dt {
+  font-weight: bold;
+  margin: 30px 0 15px 0;
+}
+
+#rules dd > ol > li {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+#rules dd > ol > li > * {
+  font-weight: normal;
+}
+
+#rules dd > p {
+  text-indent: 20px;
+}
+
+#rules ul > li {
+  margin-left: 50px;
+  list-style-type: circle;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+/*hiciste un buen trabajo*/
