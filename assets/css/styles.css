@@ -18,7 +18,8 @@ h1 {
 
 nav {
     position: absolute;
-    transform: translateY(-50%); /* trasladar el elemento */
+    transform: translateY(-50%);
+    /* trasladar el elemento */
     width: 100%;
     display: flex;
     justify-content: end;
@@ -30,7 +31,8 @@ nav a {
     background-color: rgb(255, 239, 22);
     color: black;
     padding: 8px;
-    text-decoration: none; /* LINEA DEBAJO DEL TEXTO LINK */
+    text-decoration: none;
+    /* LINEA DEBAJO DEL TEXTO LINK */
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -44,12 +46,15 @@ nav a {
     height: 200px;
     width: 100%;
     background-image: url(../design2_image1.jpg);
-    background-position: center; /* ORIGEN EN EL MEDIO */
-    background-size: cover; /* ALTURA O ANCHA MINIMA */
+    background-position: center;
+    /* ORIGEN EN EL MEDIO */
+    background-size: cover;
+    /* ALTURA O ANCHA MINIMA */
 }
 
 main {
-    position: relative; /* PARA QUE EL FONDO SE POSICIONA ACA */
+    position: relative;
+    /* PARA QUE EL FONDO SE POSICIONA ACA */
     flex: 1;
 }
 
@@ -65,48 +70,57 @@ main h2 {
     /* CTRL + / */
     /* CTRL + X */
     /* para que el elemento se maneja de manera independiente */
-    position: absolute; 
-    top: 0; /* DEFINICON DEL ORIGEN */
-    left: 0; /* COMPENSACION DEL MARGIN */
+    position: absolute;
+    top: 0;
+    /* DEFINICON DEL ORIGEN */
+    left: 0;
+    /* COMPENSACION DEL MARGIN */
     background-image: url(../hockey_1.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
     opacity: 0.5;
-    z-index: -1; /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
+    z-index: -1;
+    /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
 }
 
 #main_img2 {
     /* CTRL + / */
     /* CTRL + X */
     /* para que el elemento se maneja de manera independiente */
-    position: absolute; 
-    top: 0; /* DEFINICON DEL ORIGEN */
-    left: 0; /* COMPENSACION DEL MARGIN */
+    position: absolute;
+    top: 0;
+    /* DEFINICON DEL ORIGEN */
+    left: 0;
+    /* COMPENSACION DEL MARGIN */
     background-image: url(../hockey_2.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
     opacity: 0.5;
-    z-index: -1; /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
+    z-index: -1;
+    /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
 }
 
 #main_img3 {
     /* CTRL + / */
     /* CTRL + X */
     /* para que el elemento se maneja de manera independiente */
-    position: absolute; 
-    top: 0; /* DEFINICON DEL ORIGEN */
-    left: 0; /* COMPENSACION DEL MARGIN */
+    position: absolute;
+    top: 0;
+    /* DEFINICON DEL ORIGEN */
+    left: 0;
+    /* COMPENSACION DEL MARGIN */
     background-image: url(../hockey_3.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
     opacity: 0.5;
-    z-index: -1; /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
+    z-index: -1;
+    /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
 }
 
 
@@ -117,7 +131,7 @@ main h2 {
     gap: 20px;
 }
 
-#main_logo_y_articulo > img {
+#main_logo_y_articulo>img {
     width: 200px;
     height: 200px;
 }
@@ -127,5 +141,18 @@ article {
 }
 
 article p {
-    text-indent: 20px; /* CREAR ESPACIO AL PRINCIPIO DE UN PÁRRAFO */
+    text-indent: 20px;
+    /* CREAR ESPACIO AL PRINCIPIO DE UN PÁRRAFO */
 }
+
+/* Games - Tabla */
+table{
+    margin: 15px 0px;
+    /* creo que voy a sacar este backg.*/
+    background: linear-gradient(rgba(255, 239, 22, 0.507),rgba(61, 122, 61, 0.39),rgba(255, 239, 22, 0.507),rgba(61, 122, 61, 0.39),rgba(255, 239, 22, 0.507),rgba(61, 122, 61, 0.39) );
+}
+
+th, td {
+    padding: 8px;
+}
+
