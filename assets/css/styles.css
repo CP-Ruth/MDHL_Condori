@@ -77,6 +77,39 @@ main h2 {
     z-index: -1; /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
 }
 
+#main_img2 {
+    /* CTRL + / */
+    /* CTRL + X */
+    /* para que el elemento se maneja de manera independiente */
+    position: absolute; 
+    top: 0; /* DEFINICON DEL ORIGEN */
+    left: 0; /* COMPENSACION DEL MARGIN */
+    background-image: url(../hockey_2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1; /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
+}
+
+#main_img3 {
+    /* CTRL + / */
+    /* CTRL + X */
+    /* para que el elemento se maneja de manera independiente */
+    position: absolute; 
+    top: 0; /* DEFINICON DEL ORIGEN */
+    left: 0; /* COMPENSACION DEL MARGIN */
+    background-image: url(../hockey_3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1; /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
+}
+
+
 #main_logo_y_articulo {
     display: flex;
     align-items: center;
