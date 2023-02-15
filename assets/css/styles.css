@@ -146,13 +146,36 @@ article p {
 }
 
 /* Games - Tabla */
-table{
+/*table{
     margin: 15px 0px;
-    /* creo que voy a sacar este backg.*/
+    /
     background: linear-gradient(rgba(255, 239, 22, 0.507),rgba(61, 122, 61, 0.39),rgba(255, 239, 22, 0.507),rgba(61, 122, 61, 0.39),rgba(255, 239, 22, 0.507),rgba(61, 122, 61, 0.39) );
 }
 
 th, td {
     padding: 8px;
+} 
+*/
+table {     
+       
+    margin: 15px 0;     
+    width: 480px; 
+    text-align: center;    
+    border-collapse: collapse; 
+    border-top: 4px solid rgb(61, 122, 61);  
+    border-bottom: 4px solid rgb(61, 122, 61);
 }
+
+th {     
+    padding: 8px;     
+    background: rgb(255, 239, 22);
+    border-bottom: 1px solid rgb(61, 122, 61); 
+    color: black; }
+
+td {    
+    padding: 8px;    
+    background: rgba(255, 239, 22, 0.534);     
+    border-bottom: 1px solid rgb(61, 122, 61);
+    color: black;    
+    border-top: px solid rgba(61, 122, 61, 0.596); }
 
