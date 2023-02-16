@@ -1,42 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/disco_icon" href="./assets/hockey_icon.png" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Mighty Ducks</title>
-  </head>
 
-  <body>
-    <div id="body">
-      <header>
-        <h1>Mighty Ducks Hockey League</h1>
-        <nav>
-          <a href="#" class="active">Home</a>
-          <a href="about.html">About MDHL</a>
-          <a href="game_info.html">Games</a>
-          <a href="rules.html">Rules</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <div id="header_img"></div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/disco_icon" href="./assets/hockey_icon.png" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Mighty Ducks</title>
+</head>
 
-      <main>
-        <h2>Upcoming Events</h2>
-        <div id="main_img1" class="main_img"></div>
+<body>
+  <div id="body">
+    <header>
+      <h1>Mighty Ducks Hockey League</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About MDHL</a>
+        <a href="game_info.html">Games</a>
+        <a href="rules.html">Rules</a>
+        <a href="#" class="active">Registration</a>
+        <a href="contact.html">Contact</a>
 
-        <div id="main_logo_y_contenido">
-          <img src="./assets/logo.png" alt="Logo" />
-          <div>
-            
+      </nav>
+      <div id="header_img"></div>
+    </header>
+
+    <main>
+      <h2>Registration</h2>
+      <div id="main_img1" class="main_img"></div>
+
+      <div id="main_logo_y_contenido">
+        <img src="./assets/logo.png" alt="Logo" />
+        <div>
+
+          <h3>REGISTRATION FORM</h3>
+
+          <form action="./show_data.html" method="get">
+
+            <label for="name">Player's First Name:</label>
+            <input type="text"><br>
+            <label for="name">Last Name:</label>
+            <input type="text"><br>
+            <label for="name">Street Address:</label>
+            <input type="text"><br>
+            <label for="name">City:</label>
+            <input type="text"><br>
+            <label for="name">Zip Code:</label>
+            <input type="text"> <br>
+            <label for="name">Birth Date (mm/dd/yyyy):</label>
+            <input type="text"><br>
+
+            <p>Gender:</p>
+            <label for="name">Female</label>
+            <input type="radio" name="Gender" id="Female">
+            <label for="name">Male</label>
+            <input type="radio" name="Gender" id="Male">
+
+            <p>Grade:</p>
+            <input type="checkbox" id="Pre-School" name="Grade" value="Pre-School">
+            <label for="Pre-School"> Pre-School</label><br>
+            <input type="checkbox" id="1st" name="Grade" value="1st">
+            <label for="1st"> 1st</label>
+            <input type="checkbox" id="2nd" name="Grade" value="2nd">
+            <label for="2nd"> 2nd</label>
+            <input type="checkbox" id="3rd" name="Grade" value="3rd">
+            <label for="3rd"> 3rd</label>
+            <input type="checkbox" id="4th" name="Grade" value="4th">
+            <label for="4th"> 4th</label>
+            <input type="checkbox" id="5th" name="Grade" value="5th">
+            <label for="5th"> 5th</label>
+
+            <p>Which elementary school do you live near?</p>
+            <p>Closest School</p>
+            <input type="checkbox" id="AJ" name="School" value="Boat">
+            <label for="vehicle3">  AJ Katzenmaier</label>
+            <input type="checkbox" id="Greenbay" name="School" value="Boat">
+            <label for="vehicle3"> Greenbay</label><br>
+            <input type="checkbox" id="Howard" name="School" value="Boat">
+            <label for="vehicle3"> Howard A Yeager</label>
+            <input type="checkbox" id="Marjorie" name="School" value="Boat">
+            <label for="vehicle3"> Marjorie P Hart</label><br>
+            <input type="checkbox" id="North" name="School" value="Boat">
+            <label for="vehicle3"> North Elementary</label>
+            <input type="checkbox" id="South" name="School" value="Boat">
+            <label for="vehicle3"> South Elementary</label>
+
+            <p>What position(s) do you normally play? (check all that apply)</p>
+            <input type="checkbox" id="AJ" name="position" value="Boat">
+            <label for="vehicle3">  AJ Katzenmaier</label>
+            <input type="checkbox" id="Greenbay" name="position" value="Boat">
+            <label for="vehicle3"> Greenbay</label><br>
+            <input type="checkbox" id="Howard" name="position" value="Boat">
+            <label for="vehicle3"> Howard A Yeager</label>
+            <input type="checkbox" id="Marjorie" name="position" value="Boat">
+            <label for="vehicle3"> Marjorie P Hart</label><br>
+
+            <input type="submit" value="Submit"> <!--Ver esta parte-->
+            <input type="reset">
+
+          </form>
 
 
-            
-          </div>
+
+
+
         </div>
-      </main>
-    </div>
-  </body>
+      </div>
+    </main>
+  </div>
+</body>
+
 </html>
