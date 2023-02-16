@@ -9,12 +9,19 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  text-align: justify;
 }
 
 h1 {
   /* top right bottom left */
   margin: 15px 30px;
+}
+dejame
+h1 > div {
+  display: inline-block;
+}
+
+p {
+  text-align: justify;
 }
 
 nav {
@@ -80,7 +87,7 @@ main h2 {
   background-position: center;
   height: 100%;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: -1;
   /* PONER LA IMAGEN EN LA ULTIMA CAPA (ABAJO) */
 }
@@ -102,11 +109,17 @@ main h2 {
   align-items: center;
   padding: 20px;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #main_logo_y_contenido > img {
   width: 200px;
   height: 200px;
+}
+
+#main_logo_y_contenido > div  {
+  width: 750px;
 }
 
 article {
@@ -196,4 +209,19 @@ dt {
 }
 
 /*.............Registration Form.............*/
+form > p { 
+  margin: 20px 0 5px 0;
+}
 
+form > input {
+  outline: 0;
+  border: 2px solid rgb(61, 122, 61);
+  margin: 2px 0;
+}
+
+form > input[type="text"],
+form > input[type="number"],
+form > input[type="date"] {
+  width: 300px;
+  display: block;
+}
