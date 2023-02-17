@@ -17,17 +17,16 @@
         <div>Mighty Ducks</div>
         <div>Hockey League</div>
       </h1>
-      
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About MDHL</a>
-        <a href="game_info.html">Games</a>
-        <a href="rules.html">Rules</a>
-        <a href="#" class="active">Registration</a>
-        <a href="contact.html">Contact</a>
-
-      </nav>
-      <div id="header_img"></div>
+      <div id="header_img">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About MDHL</a>
+          <a href="game_info.html">Games</a>
+          <a href="rules.html">Rules</a>
+          <a href="#" class="active">Registration</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -37,121 +36,141 @@
       <div id="main_logo_y_contenido">
         <img src="./assets/logo.png" alt="Logo" />
         <div>
-
-        
-          <form action="./show_data.html" method="get"> 
-            
+          <form action="./show_data.html" method="get">
             <!-- parece que no se puede usar <br>  -->
-              <p><strong>Datos Personales</strong> </p> <!---mmmmm n-->
-              <label for="firstname">Player's First Name:</label>
-              <input required type="text" name="firstname">
-              <label for="lastname">Last Name:</label>
-              <input required type="text" name="lastname">
-              <label for="address">Street Address:</label>
-              <input required type="text" name="address">
-              <label for="city">City:</label>
-              <input required type="text" name="city">
-              <label for="zip">Zip Code:</label>
-              <input required type="number" name="zip">
-              <label for="birthdate">Birth Date (mm/dd/yyyy):</label>
-              <input required type="date" name="birthdate">
+            <strong>Datos Personales</strong>
+            <!---mmmmm n-->
+            <div class="flex">
+              <div class="input_group">
+                <label for="firstname">Player's First Name:</label>
+                <input required type="text" name="firstname" />
+              </div>
+              <div class="input_group">
+                <label for="lastname">Last Name:</label>
+                <input required type="text" name="lastname" />
+              </div>
+            </div>
+            <div class="flex">
+              <div class="input_group">
+                <label for="address">Street Address:</label>
+                <input required type="text" name="address" />
+              </div>
+              <div class="input_group">
+                <label for="city">City:</label>
+                <input required type="text" name="city" />
+              </div>
+            </div>
+            <div class="flex">
+              <div class="input_group">
+                <label for="zip">Zip Code:</label>
+                <input required type="number" name="zip" />
+              </div>
+              <div class="input_group">
+                <label for="birthdate">Birth Date (mm/dd/yyyy):</label>
+                <input required type="date" name="birthdate" />
+              </div>
+            </div>
 
-              <p><strong> Gender:</strong></p>
-              <!-- ¡Ya funciona! -->
-              <input type="radio" id="female" name="gender" value="Female">
-              <label for="female">Female</label>
+            <strong> Gender:</strong>
+            <!-- ¡Ya funciona! -->
+            <div class="flex">
+              <div>
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">Female</label>
+              </div>
+              <div>
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="male">Male</label>
+              </div>
+            </div>
 
-              <input type="radio" id="male" name="gender" value="Male">
-              <label for="male">Male</label>
-            
-            
             <!-- Esto solo puede ser una opción  REVISAR-->
-            <p><strong> Grade:</strong></p>
-            <input type="checkbox" id="Pre-School" name="Grade" value="Pre-School">
-            <label for="Pre-School"> Pre-School</label><br>
-            <input type="checkbox" id="1st" name="Grade" value="1st">
+            <strong> Grade:</strong>
+            <input type="radio" id="Pre-School" name="Grade" value="Pre-School" />
+            <label for="Pre-School"> Pre-School</label><br />
+            <input type="radio" id="1st" name="Grade" value="1st" />
             <label for="1st"> 1st</label>
-            <input type="checkbox" id="2nd" name="Grade" value="2nd">
+            <input type="radio" id="2nd" name="Grade" value="2nd" />
             <label for="2nd"> 2nd</label>
-            <input type="checkbox" id="3rd" name="Grade" value="3rd">
+            <input type="radio" id="3rd" name="Grade" value="3rd" />
             <label for="3rd"> 3rd</label>
-            <input type="checkbox" id="4th" name="Grade" value="4th">
+            <input type="radio" id="4th" name="Grade" value="4th" />
             <label for="4th"> 4th</label>
-            <input type="checkbox" id="5th" name="Grade" value="5th">
+            <input type="radio" id="5th" name="Grade" value="5th" />
             <label for="5th"> 5th</label>
-            
-            <p><strong> Which elementary school do you live near?   Closest School</strong></p>
-            <input type="checkbox" id="aj" name="School" value="AJ Katzenmaierat">
-            <label for="aj"> AJ Katzenmaier</label>
-            <input type="checkbox" id="greenbay" name="School" value="Greenbay">
-            <label for="greenbay"> Greenbay</label><br>
-            <input type="checkbox" id="howard" name="School" value="Howard A Yeager">
-            <label for="howard"> Howard A Yeager</label>
-            <input type="checkbox" id="marjorie" name="School" value="Marjorie P Hart">
-            <label for="marjorie"> Marjorie P Hart</label><br>
-            <input type="checkbox" id="north" name="School" value="North Elementary">
-            <label for="north"> North Elementary</label>
-            <input type="checkbox" id="south" name="School" value="South Elementary">
-            <label for="south"> South Elementary</label>
+
+            <strong>
+              Which elementary school do you live near? 
+            </strong>
+
+            <!-- Menu SELECT-->
+            <label for="select">Closest School:</label>
+            <select name="school">
+              <option disabled selected>School</option>
+              <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+              <option value="Greenbay">Greenbay</option>
+              <option value="Howard A Yeager">Howard A Yeager</option>
+              <option value="Marjorie P Hart">Marjorie P Hart</option>
+              <option value="North Elementary">North Elementary</option>
+              <option value="South Elementary">South Elementary</option>
+            </select>
 
             <!-- Aca pueden seleccionar más de one-->
-            <p><strong> What position(s) do you normally play? (check all that apply)</strong></strong></p>
-            <input type="checkbox" id="forward" name="position" value="Forward">
+            <strong>
+              What position(s) do you normally play? (check all that apply)
+            </strong>
+            <input type="checkbox" id="forward" name="position" value="Forward" />
             <label for="forward"> Forward</label>
-            <input type="checkbox" id="defense" name="position" value="Defense">
-            <label for="defense"> Defense</label><br>
-            <input type="checkbox" id="midfield" name="position" value="Midfield">
+            <input type="checkbox" id="defense" name="position" value="Defense" />
+            <label for="defense"> Defense</label><br />
+            <input type="checkbox" id="midfield" name="position" value="Midfield" />
             <label for="midfield"> Midfield</label>
-            <input type="checkbox" id="goalkeeper" name="position" value="Goalkeeper">
-            <label for="goalkeeper"> Goalkeeper</label><br>
+            <input type="checkbox" id="goalkeeper" name="position" value="Goalkeeper" />
+            <label for="goalkeeper"> Goalkeeper</label><br />
 
-
-            <p><strong> Uniform Size</strong></p>
-            <input type="radio" id="youth_small" name="size" value="Youth Small">
+            <strong> Uniform Size</strong>
+            <input type="radio" id="youth_small" name="size" value="Youth Small" />
             <label for="youth_small"> Youth Small</label>
 
-            <input type="radio" id="youth_medium" name="size" value="Youth Medium">
-            <label for="youth_medium"> Youth Medium</label><br>
+            <input type="radio" id="youth_medium" name="size" value="Youth Medium" />
+            <label for="youth_medium"> Youth Medium</label><br />
 
-            <input type="radio" id="youth_large" name="size" value="Youth Large">
+            <input type="radio" id="youth_large" name="size" value="Youth Large" />
             <label for="youth_large"> Youth Large</label>
 
-            <input type="radio" id="small" name="size" value="Small">
-            <label for="small"> Small</label><br>
+            <input type="radio" id="small" name="size" value="Small" />
+            <label for="small"> Small</label><br />
 
-            <input type="radio" id="medium" name="size" value="Medium">
+            <input type="radio" id="medium" name="size" value="Medium" />
             <label for="medium"> Medium</label>
 
-            <input type="radio" id="large" name="size" value="Large">
+            <input type="radio" id="large" name="size" value="Large" />
             <label for="large"> Large</label>
 
-            <input type="radio" id="extra_large" name="size" value="Extra Large">
-            <label for="extra_large"> Extra Large</label><br>
+            <input type="radio" id="extra_large" name="size" value="Extra Large" />
+            <label for="extra_large"> Extra Large</label><br />
 
-            <P><strong> Permission to Play</strong></P>
-            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the
+            <p>
+              <strong> Permission to Play</strong>
+              I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the
               rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
               associated with hockey and in consideration for the “League” accepting the registrant for its hockey
               programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and
               associated personnel and volunteers,including the facilities used for practices and games, against any
               claim by or on behalf of the registrant as a result of the registrant's participation in the
-              programand/orbeing transported to or from MDHL sponsored activities,which transportation.<br>By signing
-              below, I herebyagree andauthorizethe above.In addition, by signing below, lalso acknowledge that I have
-              read the cancellation policy and agree to its terms.</p>
-            <label for="name">Parent/GuardianSignature:</label>
-            <input required type="text" name="name"><br>
+              programand/orbeing transported to or from MDHL sponsored activities,which transportation.<br />By signing
+              below, I herebyagree andauthorizethe above.In addition, by entering your name below, lalso acknowledge that I have
+              read the cancellation policy and agree to its terms.
+            </p>
+            <label for="name">Parent/Guardian Signature:</label>
+            <input required type="text" name="name" />
             <label for="date">Date:</label>
-            <input required type="date" name="date"><br>
+            <input required type="date" name="date" />
 
-            <input type="submit" value="Submit"> <!--Ver esta parte-->
-            <input type="reset">
-
+            <input type="submit" value="Submit" />
+            <!--Ver esta parte-->
+            <input type="reset" />
           </form>
-
-
-
-
-
         </div>
       </div>
     </main>

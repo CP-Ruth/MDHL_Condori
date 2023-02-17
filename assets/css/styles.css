@@ -12,16 +12,27 @@
 }
 
 h1 {
-  /* top right bottom left */
-  margin: 15px 30px;
+  margin: 15px 30px 25px 30px;
 }
-dejame
-h1 > div {
+
+h1>div {
   display: inline-block;
 }
 
 p {
   text-align: justify;
+}
+
+#header_img {
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  padding: 20px;
+  background-image: url(../design2_image1.jpg);
+  background-position: center;
+  /* ORIGEN EN EL MEDIO */
+  background-size: cover;
+  /* ALTURA O ANCHA MINIMA */
 }
 
 nav {
@@ -33,6 +44,9 @@ nav {
   justify-content: end;
   gap: 10px;
   padding: 0 10px;
+  flex-wrap: wrap;
+  top: 0;
+  right: 0;
 }
 
 nav a {
@@ -50,14 +64,13 @@ nav a {
   color: white;
 }
 
-#header_img {
-  height: 200px;
-  width: 100%;
-  background-image: url(../design2_image1.jpg);
-  background-position: center;
-  /* ORIGEN EN EL MEDIO */
-  background-size: cover;
-  /* ALTURA O ANCHA MINIMA */
+@media only screen and (max-width: 600px) {
+  nav {
+    position: relative;
+    flex-direction: column;
+    transform: none;
+    padding: 0;
+  }
 }
 
 main {
@@ -113,12 +126,12 @@ main h2 {
   justify-content: center;
 }
 
-#main_logo_y_contenido > img {
+#main_logo_y_contenido>img {
   width: 200px;
   height: 200px;
 }
 
-#main_logo_y_contenido > div  {
+#main_logo_y_contenido>div {
   width: 750px;
 }
 
@@ -141,6 +154,10 @@ article p {
   text-decoration: underline;
 }
 
+#game_info .flex {
+  gap: 20px;
+}
+
 table {
   margin: 10px 0;
   width: 480px;
@@ -152,7 +169,7 @@ table {
 
 th {
   padding: 8px;
-  background:  rgba(255, 239, 22, 0.486);
+  background: rgba(255, 239, 22, 0.486);
   border-bottom: 1px solid rgb(61, 122, 61);
   color: black;
 }
@@ -167,16 +184,16 @@ td {
 
 /*............RULES..........*/
 
-#rules > p,
-#rules > h3 {
+#rules>p,
+#rules>h3 {
   text-align: center;
 }
 
-#rules > h3 {
+#rules>h3 {
   margin-bottom: 5px;
 }
 
-#rules > p {
+#rules>p {
   margin-bottom: 15px;
 }
 
@@ -185,43 +202,83 @@ dt {
   margin: 30px 0 15px 0;
 }
 
-#rules dd > ol > li {
+#rules dd>ol>li {
   margin: 15px 0;
   font-weight: bold;
 }
 
-#rules dd > ol > li > * {
+#rules dd>ol>li>* {
   font-weight: normal;
 }
 
-#rules dd > p {
+#rules dd>p {
   text-indent: 20px;
 }
 
-#rules ul > li {
+#rules ul>li {
   margin-left: 50px;
   list-style-type: circle;
 }
 
 .flex {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /*.............Registration Form.............*/
-form > p { 
+form strong {
+  display: block;
+  margin-bottom: 5px;
   margin: 20px 0 5px 0;
 }
 
-form > input {
+form input {
   outline: 0;
   border: 2px solid rgb(61, 122, 61);
   margin: 2px 0;
+  padding: 3px;
 }
 
-form > input[type="text"],
-form > input[type="number"],
-form > input[type="date"] {
-  width: 300px;
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
   display: block;
+  min-width: 300px;
+}
+
+form .flex {
+  margin-bottom: 10px;
+}
+
+.input_group {
+  flex: 1;
+}
+
+.input_group input {
+  width: 100% !important;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: rgb(255, 239, 22);
+
+}
+
+form p {
+  margin-bottom: 20px;
+}
+
+/* ..............Mapa..............*/
+
+iframe {
+  border-radius: 1rem;
+  margin: 10px 10px;
+  width: 300px;
+  height: 240px;
+  min-width: 100px;
+  min-height: 100px;
+
 }
