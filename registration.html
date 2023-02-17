@@ -2,11 +2,11 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/disco_icon" href="./assets/hockey_icon.png" />
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/disco_icon" href="./assets/hockey_icon.png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Mighty Ducks</title>
 </head>
 
@@ -14,8 +14,8 @@
   <div id="body">
     <header>
       <h1>
-        <div>Mighty Ducks</div>
-        <div>Hockey League</div>
+        <span>Mighty Ducks</span>
+        <span>Hockey League</span>
       </h1>
       <div id="header_img">
         <nav>
@@ -34,7 +34,7 @@
       <div id="main_img1" class="main_img"></div>
 
       <div id="main_logo_y_contenido">
-        <img src="./assets/logo.png" alt="Logo" />
+        <img src="./assets/logo.png" alt="Logo">
         <div>
           <form action="./show_data.html" method="get">
             <!-- parece que no se puede usar <br>  -->
@@ -43,31 +43,31 @@
             <div class="flex">
               <div class="input_group">
                 <label for="firstname">Player's First Name:</label>
-                <input required type="text" name="firstname" />
+                <input required type="text" name="firstname" id="firstname">
               </div>
               <div class="input_group">
                 <label for="lastname">Last Name:</label>
-                <input required type="text" name="lastname" />
+                <input required type="text" name="lastname" id="lastname">
               </div>
             </div>
             <div class="flex">
               <div class="input_group">
                 <label for="address">Street Address:</label>
-                <input required type="text" name="address" />
+                <input required type="text" name="address" id="address">
               </div>
               <div class="input_group">
                 <label for="city">City:</label>
-                <input required type="text" name="city" />
+                <input required type="text" name="city" id="city">
               </div>
             </div>
             <div class="flex">
               <div class="input_group">
                 <label for="zip">Zip Code:</label>
-                <input required type="number" name="zip" />
+                <input required type="number" name="zip" id="zip">
               </div>
               <div class="input_group">
                 <label for="birthdate">Birth Date (mm/dd/yyyy):</label>
-                <input required type="date" name="birthdate" />
+                <input required type="date" name="birthdate" id="birthdate">
               </div>
             </div>
 
@@ -75,28 +75,28 @@
             <!-- ¡Ya funciona! -->
             <div class="flex">
               <div>
-                <input type="radio" id="female" name="gender" value="Female" />
+                <input type="radio" id="female" name="gender" value="Female">
                 <label for="female">Female</label>
               </div>
               <div>
-                <input type="radio" id="male" name="gender" value="Male" />
+                <input type="radio" id="male" name="gender" value="Male">
                 <label for="male">Male</label>
               </div>
             </div>
 
             <!-- Esto solo puede ser una opción  REVISAR-->
             <strong> Grade:</strong>
-            <input type="radio" id="Pre-School" name="Grade" value="Pre-School" />
-            <label for="Pre-School"> Pre-School</label><br />
-            <input type="radio" id="1st" name="Grade" value="1st" />
+            <input type="radio" id="pre-school" name="Grade" value="Pre-School">
+            <label for="pre-school"> Pre-School</label><br>
+            <input type="radio" id="1st" name="Grade" value="1st" >
             <label for="1st"> 1st</label>
-            <input type="radio" id="2nd" name="Grade" value="2nd" />
+            <input type="radio" id="2nd" name="Grade" value="2nd" >
             <label for="2nd"> 2nd</label>
-            <input type="radio" id="3rd" name="Grade" value="3rd" />
+            <input type="radio" id="3rd" name="Grade" value="3rd" >
             <label for="3rd"> 3rd</label>
-            <input type="radio" id="4th" name="Grade" value="4th" />
+            <input type="radio" id="4th" name="Grade" value="4th" >
             <label for="4th"> 4th</label>
-            <input type="radio" id="5th" name="Grade" value="5th" />
+            <input type="radio" id="5th" name="Grade" value="5th" >
             <label for="5th"> 5th</label>
 
             <strong>
@@ -105,7 +105,7 @@
 
             <!-- Menu SELECT-->
             <label for="select">Closest School:</label>
-            <select name="school">
+            <select required name="school" id="select">
               <option disabled selected>School</option>
               <option value="AJ Katzenmaier">AJ Katzenmaier</option>
               <option value="Greenbay">Greenbay</option>
@@ -119,36 +119,36 @@
             <strong>
               What position(s) do you normally play? (check all that apply)
             </strong>
-            <input type="checkbox" id="forward" name="position" value="Forward" />
+            <input type="checkbox" id="forward" name="position" value="Forward">
             <label for="forward"> Forward</label>
-            <input type="checkbox" id="defense" name="position" value="Defense" />
-            <label for="defense"> Defense</label><br />
-            <input type="checkbox" id="midfield" name="position" value="Midfield" />
+            <input type="checkbox" id="defense" name="position" value="Defense">
+            <label for="defense"> Defense</label><br >
+            <input type="checkbox" id="midfield" name="position" value="Midfield" >
             <label for="midfield"> Midfield</label>
-            <input type="checkbox" id="goalkeeper" name="position" value="Goalkeeper" />
-            <label for="goalkeeper"> Goalkeeper</label><br />
+            <input type="checkbox" id="goalkeeper" name="position" value="Goalkeeper" >
+            <label for="goalkeeper"> Goalkeeper</label><br >
 
             <strong> Uniform Size</strong>
-            <input type="radio" id="youth_small" name="size" value="Youth Small" />
+            <input type="radio" id="youth_small" name="size" value="Youth Small" >
             <label for="youth_small"> Youth Small</label>
 
-            <input type="radio" id="youth_medium" name="size" value="Youth Medium" />
-            <label for="youth_medium"> Youth Medium</label><br />
+            <input type="radio" id="youth_medium" name="size" value="Youth Medium" >
+            <label for="youth_medium"> Youth Medium</label><br >
 
-            <input type="radio" id="youth_large" name="size" value="Youth Large" />
+            <input type="radio" id="youth_large" name="size" value="Youth Large" >
             <label for="youth_large"> Youth Large</label>
 
-            <input type="radio" id="small" name="size" value="Small" />
-            <label for="small"> Small</label><br />
+            <input type="radio" id="small" name="size" value="Small" >
+            <label for="small"> Small</label><br >
 
-            <input type="radio" id="medium" name="size" value="Medium" />
+            <input type="radio" id="medium" name="size" value="Medium" >
             <label for="medium"> Medium</label>
 
-            <input type="radio" id="large" name="size" value="Large" />
+            <input type="radio" id="large" name="size" value="Large" >
             <label for="large"> Large</label>
 
-            <input type="radio" id="extra_large" name="size" value="Extra Large" />
-            <label for="extra_large"> Extra Large</label><br />
+            <input type="radio" id="extra_large" name="size" value="Extra Large" >
+            <label for="extra_large"> Extra Large</label><br >
 
             <p>
               <strong> Permission to Play</strong>
@@ -158,18 +158,18 @@
               programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and
               associated personnel and volunteers,including the facilities used for practices and games, against any
               claim by or on behalf of the registrant as a result of the registrant's participation in the
-              programand/orbeing transported to or from MDHL sponsored activities,which transportation.<br />By signing
+              programand/orbeing transported to or from MDHL sponsored activities,which transportation.<br>By signing
               below, I herebyagree andauthorizethe above.In addition, by entering your name below, lalso acknowledge that I have
               read the cancellation policy and agree to its terms.
             </p>
             <label for="name">Parent/Guardian Signature:</label>
-            <input required type="text" name="name" />
+            <input required type="text" name="name" id="name" >
             <label for="date">Date:</label>
-            <input required type="date" name="date" />
+            <input required type="date" name="date"  id="date">
 
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" >
             <!--Ver esta parte-->
-            <input type="reset" />
+            <input type="reset" >
           </form>
         </div>
       </div>
